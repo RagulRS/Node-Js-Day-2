@@ -1,0 +1,15 @@
+{
+  "name": "node-js-day-2",
+  "version": "1.0.0",
+  "description": "sample node project for learning and writing API's",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "base-server":"node --watch basic-server.js"
+ 
+    
+  },
+  "author": "",
+  "license": "ISC"
+}
