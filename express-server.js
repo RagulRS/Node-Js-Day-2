@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import todosRouter from './routes/todos.js';
 import mongooseConnect from './utils/mongoose-connection.js';
 import teachersRouter from './routes/teachersRouter.js';
@@ -8,6 +9,7 @@ import studentDBRouter from './routes/studentsRouter.js';
 
 const server =express();
 server.use(express.json());
+server.use(cors());
 await mongooseConnect();
 
 // const authAllApi = (req, res, next) => {
